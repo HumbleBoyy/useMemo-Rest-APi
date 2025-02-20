@@ -12,32 +12,36 @@ import { ArrowBack } from '@mui/icons-material';
 export default function SinglePage() {
   const {id} = useParams()
   const singleProduct = getRequest(`/products/${id}`)
+  console.log(singleProduct)
   const navigate = useNavigate()
   return (
-     <>
-     <div className='flex items-center justify-between p-5'>
-       <Button onClick={()=> navigate(-1)} variant="outlined" startIcon={<ArrowBack/>}></Button>
-     </div>
-      <div className='flex justify-center py-5'>
-      <Card sx={{ maxWidth: 345 }}>
+     <div className='h-[100vh] flex items-center mx-auto'>
+      <div className='flex justify-center'>
+      <Card sx={{ maxWidth: 1045 }} className='flex items-center'>
         <CardActionArea>
           <CardMedia
+            className='h-[500px]'
             component="img"
-            height="140"
+            height="3000"
             image={singleProduct.images}
             alt={singleProduct.title}
           />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+        </CardActionArea>
+        <CardActionArea>
+          <CardContent className='h-[500px] p-2'>
+            <Typography gutterBottom variant="h5" component="div" className=''>
               {singleProduct.title}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                 {singleProduct.description}
             </Typography>
+            <div className='flex justify-self-auto'>
+              <Button onClick={()=> navigate(-1)} size='large' variant="outlined" className='w-full' startIcon={<ArrowBack/>}>Back</Button>
+            </div>
           </CardContent>
         </CardActionArea>
       </Card>
      </div>
-     </>
+     </div>
   );
 }

@@ -81,7 +81,7 @@ export default function Navbar() {
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             className='text-bold uppercase'
           >
-           Hammasi bir joyda Market
+          Market
           </Typography>
           <IconButton aria-label="cart">
             <StyledBadge badgeContent={4} color="primary">
