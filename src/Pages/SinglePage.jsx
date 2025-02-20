@@ -29,7 +29,7 @@ export default function SinglePage() {
         </CardActionArea>
         <CardActionArea>
           <CardContent className='h-[500px] p-2'>
-            <Typography gutterBottom variant="h5" component="div" className='!text-[55px]'>
+            <Typography gutterBottom variant="h5" component="div" className='!text-[45px]'>
               {singleProduct.title}
             </Typography>
             <Typography gutterBottom variant="h5" component="div">
