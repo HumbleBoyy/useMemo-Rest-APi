@@ -29,8 +29,8 @@ export default function ProdcutCard({item}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="contained">Saved</Button>
-        <Button size="small" onClick={()=> navigate(`${item.id}`)} variant="outlined">Learn More</Button>
+        <Button size="meduim" variant="contained">Saved</Button>
+        <Button size="meduim" onClick={()=> navigate(`${item.id}`)} variant="outlined">Learn More</Button>
       </CardActions>
     </Card>
   );
