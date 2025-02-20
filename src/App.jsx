@@ -1,12 +1,13 @@
 import React from 'react'
-import Layout from './Features'
+import ProductsRoute from './routes/ProductsRoute'
+
 
 const App = () => {
   
  
   return (
   <>
-     <Layout/>
+     <ProductsRoute/>
   </>
   )
 }

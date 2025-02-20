@@ -1,6 +1,6 @@
 import Products from "./Products";
-import SignlePage from "./SignlePage";
+import SinglePage from "./SinglePage";
 export {
     Products,
-    SignlePage
+    SinglePage
 }

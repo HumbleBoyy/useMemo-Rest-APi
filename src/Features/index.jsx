@@ -1,12 +1,11 @@
 import React from 'react'
 import Navbar from '../Modules/Navbar'
-import Products from '../Pages/Products'
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div className='flex flex-col'>
       <Navbar/>
-      <Products/>
+      {children}
     </div>
   )
 }
